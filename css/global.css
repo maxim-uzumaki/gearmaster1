@@ -1,0 +1,62 @@
+:root {
+    --general-text: #2A2A2A;
+    --second-text: #FFF;
+    --general-bg: #F8F8F8;
+    --second-bg: #474A51;
+    --accent-color: #009B77;
+    --transition: all .4s;
+    --border-radius: 3px
+}
+
+/* html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+} */
+
+.body {
+    font-family: "Mulish", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--general-text);
+    background: var(--general-bg);
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.header__hero {
+    padding: 120px 0px 66px;
+}
+
+.main__features,
+.main__review,
+.main__categories,
+.main__faq,
+.main__news,
+.main-testimonials {
+    padding: 150px 0px;
+}
+
+.container {
+    max-width: 1390px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.logo {}
+
+.title {
+    font-weight: 500;
+    font-size: 41px;
+    line-height: 1.25;
+}

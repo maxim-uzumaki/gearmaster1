@@ -1,0 +1,132 @@
+.footer {
+    background: var(--second-bg);
+    padding: 80px 0px 60px;
+}
+
+.footer__logo {
+    display: block;
+    max-width: 260px;
+    padding: 5px 0px;
+    margin-bottom: 35px;
+}
+
+.footer__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.25;
+    color: var(--second-text);
+    margin-bottom: 30px;
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.footer__col {}
+
+.footer__col-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.25;
+    color: var(--second-text);
+    margin-bottom: 9px;
+}
+
+.footer__col-list {
+    line-height: 1.27;
+    color: var(--second-text);
+}
+
+.footer__col-item {
+    margin-bottom: 6px;
+}
+
+.footer__col-item:last-child {
+    margin-bottom: 0;
+}
+
+.footer__col-link {
+    display: inline-block;
+    padding: 2px 0px;
+    transition: var(--transition);
+}
+
+.footer__col-link:hover {
+    color: var(--accent-color);
+}
+
+.footer__col-contancts {
+    justify-self: end;
+}
+
+.footer__col-tel {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--second-text);
+    margin-bottom: 50px;
+}
+
+.footer__col-number {
+    display: inline-block;
+    padding: 5px 0px;
+    transition: var(--transition);
+}
+
+.footer__col-number:hover {
+    color: var(--accent-color);
+}
+
+.footer__socials {
+    margin-bottom: 55px;
+}
+
+
+.socials {}
+
+.socials-list {
+    display: flex;
+    gap: 20px;
+}
+
+.socials__item:first-child .socials__link {
+    padding-right: 4px;
+}
+
+.socials__item {}
+
+.socials__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--second-text);
+    transition: var(--transition);
+}
+
+.socials__link:hover {
+    background: var(--accent-color);
+}
+
+.socials__link path {
+    transition: var(--transition);
+}
+
+.socials__link:hover path {
+    fill: var(--second-text);
+}
+
+
+.footer__col-copy {
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--second-text);
+    margin-left: -110px;
+}
