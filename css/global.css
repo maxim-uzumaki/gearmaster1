@@ -21,12 +21,23 @@
     background: var(--general-bg);
 }
 
+.body--opened-menu {
+    overflow: hidden;
+}
+
 .wrapper {
     min-height: 100%;
     width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+
+.container {
+    max-width: 1390px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
 }
 
 .main {
@@ -37,20 +48,74 @@
     padding: 120px 0px 66px;
 }
 
+.burger-icon {
+    display: none;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    background: var(--second-text);
+    transition: var(--transition);
+}
+
+.burger-icon:hover span,
+.burger-icon:hover span::before,
+.burger-icon:hover span::after {
+    background: var(--accent-color);
+}
+
+.burger-icon span {
+    position: relative;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+    content: '';
+    position: absolute;
+}
+
+.burger-icon span::before {
+    top: -10px;
+}
+
+.burger-icon span::after {
+    bottom: -10px;
+}
+
+.body--opened-menu .burger-icon span {
+    background: transparent;
+}
+
+.body--opened-menu .burger-icon span::before {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::after {
+    bottom: 0px;
+    transform: rotate(-45deg);
+}
+
+
 .main__features,
 .main__review,
 .main__categories,
 .main__faq,
 .main__news,
-.main-testimonials {
+.main-testimonials,
+.main__contact,
+.main__products {
     padding: 150px 0px;
-}
-
-.container {
-    max-width: 1390px;
-    margin: 0 auto;
-    padding: 0 15px;
-    height: 100%;
 }
 
 .logo {}
@@ -59,4 +124,49 @@
     font-weight: 500;
     font-size: 41px;
     line-height: 1.25;
+}
+
+.show-more-btn {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: transparent;
+    border: 1px solid var(--general-text);
+    border-radius: var(--border-radius);
+    font-size: 24px;
+    line-height: 1.25;
+    padding: 17px 45px 17px 55px;
+    transition: var(--transition);
+}
+
+.show-more-btn:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.show-more-btn path {
+    transition: var(--transition);
+}
+
+.show-more-btn:hover path {
+    fill: var(--accent-color);
+}
+
+.field {}
+
+.button {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    color: var(--white);
+    color: var(--second-text);
+    background: var(--second-bg);
+    border-radius: var(--border-radius);
+    padding: 17px 3px;
+    transition: var(--transition);
+}
+
+.button:hover {
+    background: var(--accent-color);
 }

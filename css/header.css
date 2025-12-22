@@ -18,6 +18,10 @@
     padding: 5px 0px;
 }
 
+.header__logo img {
+    width: 100%;
+}
+
 
 .nav {}
 
@@ -26,7 +30,7 @@
     line-height: 1.2;
     color: var(--second-text);
     display: flex;
-    gap: 45px;
+    gap: 6vh 45px;
 }
 
 .nav__item {}
