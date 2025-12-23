@@ -147,6 +147,10 @@
     background: #FFF;
 }
 
+.categories__title {
+    display: none;
+}
+
 .categories__slider {
     overflow: hidden;
 }
